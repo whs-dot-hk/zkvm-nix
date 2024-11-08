@@ -2,9 +2,12 @@ with inputs.nixpkgs;
 
 {
     zkvm_0_4_12_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.12-1.0.0";
         src = builtins.fetchurl {
@@ -13,9 +16,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_13_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.13-1.0.0";
         src = builtins.fetchurl {
@@ -24,9 +30,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_14_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.14-1.0.0";
         src = builtins.fetchurl {
@@ -35,9 +44,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_15_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.15-1.0.0";
         src = builtins.fetchurl {
@@ -46,9 +58,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_16_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.16-1.0.0";
         src = builtins.fetchurl {
@@ -57,9 +72,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_17_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.17-1.0.0";
         src = builtins.fetchurl {
@@ -68,9 +86,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_18_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.18-1.0.0";
         src = builtins.fetchurl {
@@ -79,9 +100,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_19_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.19-1.0.0";
         src = builtins.fetchurl {
@@ -90,9 +114,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_20_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.20-1.0.0";
         src = builtins.fetchurl {
@@ -101,9 +128,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_21_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.21-1.0.0";
         src = builtins.fetchurl {
@@ -112,9 +142,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_22_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.22-1.0.0";
         src = builtins.fetchurl {
@@ -123,9 +156,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_23_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.23-1.0.0";
         src = builtins.fetchurl {
@@ -134,9 +170,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_24_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.24-1.0.0";
         src = builtins.fetchurl {
@@ -145,9 +184,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_25_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.25-1.0.0";
         src = builtins.fetchurl {
@@ -156,9 +198,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_26_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.26-1.0.0";
         src = builtins.fetchurl {
@@ -167,9 +212,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_0_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.0-1.0.0";
         src = builtins.fetchurl {
@@ -178,9 +226,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_1_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.1-1.0.0";
         src = builtins.fetchurl {
@@ -189,9 +240,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_10_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.10-1.0.0";
         src = builtins.fetchurl {
@@ -200,9 +254,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_11_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.11-1.0.0";
         src = builtins.fetchurl {
@@ -211,9 +268,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_12_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.12-1.0.0";
         src = builtins.fetchurl {
@@ -222,9 +282,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_13_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.13-1.0.0";
         src = builtins.fetchurl {
@@ -233,9 +296,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_14_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.14-1.0.0";
         src = builtins.fetchurl {
@@ -244,9 +310,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_15_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.15-1.0.0";
         src = builtins.fetchurl {
@@ -255,9 +324,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_16_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.16-1.0.0";
         src = builtins.fetchurl {
@@ -266,9 +338,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_17_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.17-1.0.0";
         src = builtins.fetchurl {
@@ -277,9 +352,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_2_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.2-1.0.0";
         src = builtins.fetchurl {
@@ -288,9 +366,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_3_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.3-1.0.0";
         src = builtins.fetchurl {
@@ -299,9 +380,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_4_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.4-1.0.0";
         src = builtins.fetchurl {
@@ -310,9 +394,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_5_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.5-1.0.0";
         src = builtins.fetchurl {
@@ -321,9 +408,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_6_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.6-1.0.0";
         src = builtins.fetchurl {
@@ -332,9 +422,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_7_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.7-1.0.0";
         src = builtins.fetchurl {
@@ -343,9 +436,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_8_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.8-1.0.0";
         src = builtins.fetchurl {
@@ -354,9 +450,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_9_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.9-1.0.0";
         src = builtins.fetchurl {
@@ -365,9 +464,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_0_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.0-1.0.0";
         src = builtins.fetchurl {
@@ -376,9 +478,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_1_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.1-1.0.0";
         src = builtins.fetchurl {
@@ -387,9 +492,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_10_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.10-1.0.0";
         src = builtins.fetchurl {
@@ -398,9 +506,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_11_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.11-1.0.0";
         src = builtins.fetchurl {
@@ -409,9 +520,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_12_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.12-1.0.0";
         src = builtins.fetchurl {
@@ -420,9 +534,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_2_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.2-1.0.0";
         src = builtins.fetchurl {
@@ -431,9 +548,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_3_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.3-1.0.0";
         src = builtins.fetchurl {
@@ -442,9 +562,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_4_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.4-1.0.0";
         src = builtins.fetchurl {
@@ -453,9 +576,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_5_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.5-1.0.0";
         src = builtins.fetchurl {
@@ -464,9 +590,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_6_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.6-1.0.0";
         src = builtins.fetchurl {
@@ -475,9 +604,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_7_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.7-1.0.0";
         src = builtins.fetchurl {
@@ -486,9 +618,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_8_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.8-1.0.0";
         src = builtins.fetchurl {
@@ -497,9 +632,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_9_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.9-1.0.0";
         src = builtins.fetchurl {
@@ -508,9 +646,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_0_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.0-1.0.0";
         src = builtins.fetchurl {
@@ -519,9 +660,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_1_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.1-1.0.0";
         src = builtins.fetchurl {
@@ -530,9 +674,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_2_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.2-1.0.0";
         src = builtins.fetchurl {
@@ -541,9 +688,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_3_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.3-1.0.0";
         src = builtins.fetchurl {
@@ -552,9 +702,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_4_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.4-1.0.0";
         src = builtins.fetchurl {
@@ -563,9 +716,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_5_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.5-1.0.0";
         src = builtins.fetchurl {
@@ -574,9 +730,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_6_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.6-1.0.0";
         src = builtins.fetchurl {
@@ -585,9 +744,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_0_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.0-1.0.0";
         src = builtins.fetchurl {
@@ -596,9 +758,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_1_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.1-1.0.0";
         src = builtins.fetchurl {
@@ -607,9 +772,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_10_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.10-1.0.0";
         src = builtins.fetchurl {
@@ -618,9 +786,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_11_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.11-1.0.0";
         src = builtins.fetchurl {
@@ -629,9 +800,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_12_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.12-1.0.0";
         src = builtins.fetchurl {
@@ -640,9 +814,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_13_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.13-1.0.0";
         src = builtins.fetchurl {
@@ -651,9 +828,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_14_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.14-1.0.0";
         src = builtins.fetchurl {
@@ -662,9 +842,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_15_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.15-1.0.0";
         src = builtins.fetchurl {
@@ -673,9 +856,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_16_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.16-1.0.0";
         src = builtins.fetchurl {
@@ -684,9 +870,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_17_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.17-1.0.0";
         src = builtins.fetchurl {
@@ -695,9 +884,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_18_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.18-1.0.0";
         src = builtins.fetchurl {
@@ -706,9 +898,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_19_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.19-1.0.0";
         src = builtins.fetchurl {
@@ -717,9 +912,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_2_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.2-1.0.0";
         src = builtins.fetchurl {
@@ -728,9 +926,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_20_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.20-1.0.0";
         src = builtins.fetchurl {
@@ -739,9 +940,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_21_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.21-1.0.0";
         src = builtins.fetchurl {
@@ -750,9 +954,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_22_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.22-1.0.0";
         src = builtins.fetchurl {
@@ -761,9 +968,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_23_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.23-1.0.0";
         src = builtins.fetchurl {
@@ -772,9 +982,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_24_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.24-1.0.0";
         src = builtins.fetchurl {
@@ -783,9 +996,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_25_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.25-1.0.0";
         src = builtins.fetchurl {
@@ -794,9 +1010,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_3_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.3-1.0.0";
         src = builtins.fetchurl {
@@ -805,9 +1024,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_4_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.4-1.0.0";
         src = builtins.fetchurl {
@@ -816,9 +1038,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_5_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.5-1.0.0";
         src = builtins.fetchurl {
@@ -827,9 +1052,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_6_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.6-1.0.0";
         src = builtins.fetchurl {
@@ -838,9 +1066,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_7_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.7-1.0.0";
         src = builtins.fetchurl {
@@ -849,9 +1080,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_8_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.8-1.0.0";
         src = builtins.fetchurl {
@@ -860,9 +1094,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_9_1_0_0 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.9-1.0.0";
         src = builtins.fetchurl {
@@ -871,9 +1108,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_12_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.12-1.0.1";
         src = builtins.fetchurl {
@@ -882,9 +1122,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_13_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.13-1.0.1";
         src = builtins.fetchurl {
@@ -893,9 +1136,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_14_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.14-1.0.1";
         src = builtins.fetchurl {
@@ -904,9 +1150,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_15_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.15-1.0.1";
         src = builtins.fetchurl {
@@ -915,9 +1164,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_16_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.16-1.0.1";
         src = builtins.fetchurl {
@@ -926,9 +1178,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_17_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.17-1.0.1";
         src = builtins.fetchurl {
@@ -937,9 +1192,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_18_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.18-1.0.1";
         src = builtins.fetchurl {
@@ -948,9 +1206,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_19_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.19-1.0.1";
         src = builtins.fetchurl {
@@ -959,9 +1220,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_20_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.20-1.0.1";
         src = builtins.fetchurl {
@@ -970,9 +1234,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_21_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.21-1.0.1";
         src = builtins.fetchurl {
@@ -981,9 +1248,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_22_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.22-1.0.1";
         src = builtins.fetchurl {
@@ -992,9 +1262,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_23_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.23-1.0.1";
         src = builtins.fetchurl {
@@ -1003,9 +1276,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_24_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.24-1.0.1";
         src = builtins.fetchurl {
@@ -1014,9 +1290,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_25_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.25-1.0.1";
         src = builtins.fetchurl {
@@ -1025,9 +1304,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_4_26_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.4.26-1.0.1";
         src = builtins.fetchurl {
@@ -1036,9 +1318,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_0_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.0-1.0.1";
         src = builtins.fetchurl {
@@ -1047,9 +1332,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_1_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.1-1.0.1";
         src = builtins.fetchurl {
@@ -1058,9 +1346,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_10_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.10-1.0.1";
         src = builtins.fetchurl {
@@ -1069,9 +1360,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_11_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.11-1.0.1";
         src = builtins.fetchurl {
@@ -1080,9 +1374,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_12_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.12-1.0.1";
         src = builtins.fetchurl {
@@ -1091,9 +1388,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_13_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.13-1.0.1";
         src = builtins.fetchurl {
@@ -1102,9 +1402,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_14_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.14-1.0.1";
         src = builtins.fetchurl {
@@ -1113,9 +1416,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_15_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.15-1.0.1";
         src = builtins.fetchurl {
@@ -1124,9 +1430,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_16_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.16-1.0.1";
         src = builtins.fetchurl {
@@ -1135,9 +1444,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_17_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.17-1.0.1";
         src = builtins.fetchurl {
@@ -1146,9 +1458,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_2_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.2-1.0.1";
         src = builtins.fetchurl {
@@ -1157,9 +1472,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_3_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.3-1.0.1";
         src = builtins.fetchurl {
@@ -1168,9 +1486,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_4_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.4-1.0.1";
         src = builtins.fetchurl {
@@ -1179,9 +1500,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_5_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.5-1.0.1";
         src = builtins.fetchurl {
@@ -1190,9 +1514,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_6_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.6-1.0.1";
         src = builtins.fetchurl {
@@ -1201,9 +1528,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_7_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.7-1.0.1";
         src = builtins.fetchurl {
@@ -1212,9 +1542,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_8_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.8-1.0.1";
         src = builtins.fetchurl {
@@ -1223,9 +1556,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_5_9_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.5.9-1.0.1";
         src = builtins.fetchurl {
@@ -1234,9 +1570,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_0_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.0-1.0.1";
         src = builtins.fetchurl {
@@ -1245,9 +1584,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_1_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.1-1.0.1";
         src = builtins.fetchurl {
@@ -1256,9 +1598,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_10_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.10-1.0.1";
         src = builtins.fetchurl {
@@ -1267,9 +1612,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_11_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.11-1.0.1";
         src = builtins.fetchurl {
@@ -1278,9 +1626,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_12_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.12-1.0.1";
         src = builtins.fetchurl {
@@ -1289,9 +1640,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_2_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.2-1.0.1";
         src = builtins.fetchurl {
@@ -1300,9 +1654,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_3_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.3-1.0.1";
         src = builtins.fetchurl {
@@ -1311,9 +1668,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_4_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.4-1.0.1";
         src = builtins.fetchurl {
@@ -1322,9 +1682,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_5_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.5-1.0.1";
         src = builtins.fetchurl {
@@ -1333,9 +1696,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_6_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.6-1.0.1";
         src = builtins.fetchurl {
@@ -1344,9 +1710,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_7_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.7-1.0.1";
         src = builtins.fetchurl {
@@ -1355,9 +1724,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_8_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.8-1.0.1";
         src = builtins.fetchurl {
@@ -1366,9 +1738,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_6_9_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.6.9-1.0.1";
         src = builtins.fetchurl {
@@ -1377,9 +1752,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_0_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.0-1.0.1";
         src = builtins.fetchurl {
@@ -1388,9 +1766,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_1_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.1-1.0.1";
         src = builtins.fetchurl {
@@ -1399,9 +1780,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_2_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.2-1.0.1";
         src = builtins.fetchurl {
@@ -1410,9 +1794,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_3_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.3-1.0.1";
         src = builtins.fetchurl {
@@ -1421,9 +1808,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_4_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.4-1.0.1";
         src = builtins.fetchurl {
@@ -1432,9 +1822,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_5_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.5-1.0.1";
         src = builtins.fetchurl {
@@ -1443,9 +1836,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_7_6_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.7.6-1.0.1";
         src = builtins.fetchurl {
@@ -1454,9 +1850,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_0_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.0-1.0.1";
         src = builtins.fetchurl {
@@ -1465,9 +1864,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_1_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.1-1.0.1";
         src = builtins.fetchurl {
@@ -1476,9 +1878,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_10_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.10-1.0.1";
         src = builtins.fetchurl {
@@ -1487,9 +1892,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_11_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.11-1.0.1";
         src = builtins.fetchurl {
@@ -1498,9 +1906,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_12_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.12-1.0.1";
         src = builtins.fetchurl {
@@ -1509,9 +1920,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_13_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.13-1.0.1";
         src = builtins.fetchurl {
@@ -1520,9 +1934,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_14_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.14-1.0.1";
         src = builtins.fetchurl {
@@ -1531,9 +1948,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_15_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.15-1.0.1";
         src = builtins.fetchurl {
@@ -1542,9 +1962,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_16_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.16-1.0.1";
         src = builtins.fetchurl {
@@ -1553,9 +1976,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_17_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.17-1.0.1";
         src = builtins.fetchurl {
@@ -1564,9 +1990,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_18_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.18-1.0.1";
         src = builtins.fetchurl {
@@ -1575,9 +2004,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_19_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.19-1.0.1";
         src = builtins.fetchurl {
@@ -1586,9 +2018,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_2_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.2-1.0.1";
         src = builtins.fetchurl {
@@ -1597,9 +2032,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_20_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.20-1.0.1";
         src = builtins.fetchurl {
@@ -1608,9 +2046,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_21_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.21-1.0.1";
         src = builtins.fetchurl {
@@ -1619,9 +2060,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_22_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.22-1.0.1";
         src = builtins.fetchurl {
@@ -1630,9 +2074,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_23_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.23-1.0.1";
         src = builtins.fetchurl {
@@ -1641,9 +2088,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_24_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.24-1.0.1";
         src = builtins.fetchurl {
@@ -1652,9 +2102,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_25_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.25-1.0.1";
         src = builtins.fetchurl {
@@ -1663,9 +2116,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_26_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.26-1.0.1";
         src = builtins.fetchurl {
@@ -1674,9 +2130,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_27_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.27-1.0.1";
         src = builtins.fetchurl {
@@ -1685,9 +2144,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_28_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.28-1.0.1";
         src = builtins.fetchurl {
@@ -1696,9 +2158,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_3_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.3-1.0.1";
         src = builtins.fetchurl {
@@ -1707,9 +2172,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_4_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.4-1.0.1";
         src = builtins.fetchurl {
@@ -1718,9 +2186,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_5_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.5-1.0.1";
         src = builtins.fetchurl {
@@ -1729,9 +2200,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_6_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.6-1.0.1";
         src = builtins.fetchurl {
@@ -1740,9 +2214,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_7_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.7-1.0.1";
         src = builtins.fetchurl {
@@ -1751,9 +2228,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_8_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.8-1.0.1";
         src = builtins.fetchurl {
@@ -1762,9 +2242,12 @@ with inputs.nixpkgs;
         };
     };
     zkvm_0_8_9_1_0_1 = stdenv.mkDerivation {
+        autoPatchelfIgnoreMissingDeps = true;
+        buildInputs = [stdenv.cc.cc.lib];
         dontBuild = true;
         dontUnpack = true;
         installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+        nativeBuildInputs = [autoPatchelfHook];
         pname = "zkvm";
         version = "0.8.9-1.0.1";
         src = builtins.fetchurl {

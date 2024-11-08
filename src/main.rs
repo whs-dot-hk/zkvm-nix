@@ -32,6 +32,7 @@ fn get_url(version: &str) -> String {
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
+    let auto_patchelf_hook = &genco::prelude::nix::with("inputs.nixpkgs", "autoPatchelfHook");
     let stdenv = &genco::prelude::nix::with("inputs.nixpkgs", "stdenv");
     let mut tokens = genco::lang::nix::Tokens::new();
     tokens.append("{");
@@ -208,9 +209,12 @@ async fn main() -> anyhow::Result<()> {
         let name = format!("zkvm_{}", version.replace(".", "_").replace("-", "_"));
         genco::quote_in! { tokens =>
             $name = $stdenv.mkDerivation {
+                autoPatchelfIgnoreMissingDeps = true;
+                buildInputs = [stdenv.cc.cc.lib];
                 dontBuild = true;
                 dontUnpack = true;
                 installPhase = "mkdir -p $out/bin; cp $src $out/bin/solc; chmod +x $out/bin/solc";
+                nativeBuildInputs = [$auto_patchelf_hook];
                 pname = "zkvm";
                 version = $(genco::tokens::quoted(version));
                 src = builtins.fetchurl {
